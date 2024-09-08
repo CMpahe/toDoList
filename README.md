@@ -1,12 +1,51 @@
-# To do list 
+# To-Do List App
 
-#### ¿Qué es?
-<p>To Do List es un pequeño proyecto que puede definirse como una lista donde se pueden anotar tareas pendientes por el usuario.</p>
+## Descripción
 
-#### ¿Qué contiene?
-<p>Está compuesto por dos secciones principales, la primera contiene un input que puede recibir las tareas del usuario, y la segunda parte que se escuentra justo debajo es la que almacena y muestra estas tasks.</p>
+Esta es una aplicación de lista de tareas simple pero atractiva, desarrollada con HTML, CSS y JavaScript. Permite a los usuarios agregar tareas, marcarlas como completadas o desmarcarlas, y eliminarlas de la lista. Este proyecto fue realizado con el objetivo de practicar mis habilidades en desarrollo front-end.
 
-#### ¿Cómo funciona?
-<p>En la primera sección el usuario introduce el texto en el input, justo al lado se muestra un botón que se encarga de recuperar la tarea, guardarla y mostrarla en la sección posterior.
+## Características
 
-Una vez mostrada la tarea en la parte de abajo, esta aparece con un icono en el lateral izquierdo que al hacer click se marca la tarea como completada y viceversa. En el lateral derecho se muestra un icono con una X que permite eliminar la tarea de la lista.</p>
+- **Agregar tareas**: Puedes escribir una tarea en el campo de texto y agregarla a la lista haciendo clic en el botón correspondiente.
+- **Marcar tareas como completadas**: Cada tarea tiene un ícono de círculo que, al hacer clic, marca la tarea como completada. Este estado es reversible, por lo que puedes desmarcarla si lo deseas.
+- **Eliminar tareas**: Cada tarea tiene un ícono de papelera que permite eliminarla de la lista.
+- **Interfaz atractiva**: La aplicación cuenta con un diseño visual simple pero agradable utilizando CSS.
+
+## Capturas de Pantalla
+
+<img src='./img/toDoList.png' alt='Captura de pantalla de la App To-Do List' width='400'>
+
+## Instalación
+
+Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+
+2. Navega hasta la carpeta del proyecto:
+    ```bash
+    cd tu_repositorio
+
+3. Abre el archivo index.html en tu navegador favorito.
+
+## Uso 
+
+1. Escribe una tarea en el campo de texto.
+2. Haz clic en el botón "Agregar" para añadir la tarea a la lista.
+3. Marca la tarea como completada haciendo clic en el ícono de círculo.
+4. Elimina la tarea haciendo clic en el ícono de papelera.
+
+## Tecnologías Utilizadas 
+
+- HTML
+- CSS
+- JavaScript
+
+## Autor 
+
+Este proyecto fue desarrollado por Carlos M. Hernández. Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - mira el archivo [LICENSE](./LICENSE) para más detalles.
