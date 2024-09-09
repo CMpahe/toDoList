@@ -1,8 +1,14 @@
 document.querySelector("#add-btn").onclick = run_program;
 
+document.querySelector('#input-container input').addEventListener('keydown', (ev) => {
+    if(ev.key === 'Enter') {
+        run_program()
+    }
+})
+
 function run_program() {
 
-    if (document.querySelector("#input-task input").value.length == 0) {
+    if (document.querySelector("#input-container input").value.length == 0) {
 
         alert("Please enter a task!");
 
@@ -13,45 +19,52 @@ function run_program() {
             
             <div class="items">
 
-                    <div class="check-container">
-                        <button 
-                        class="check">
-                        </button>
-                    </div>
+                    <button class="check-btn"></button>
 
                     <div class="text-container">
-                        <p class="text">${document.querySelector("#input-task input").value}</p>
+                        <p class="text">${document.querySelector("#input-container input").value}</p>
                     </div>
 
-                    <div class="delete-container">
-                        <img 
-                        src="img/delete-icon2.png"
-                        alt="delete icon"
-                        class="delete">
-                    </div> 
+                    <button class="delete-btn">
+                    </button> 
 
                 </div>
 
             `;
 
-            let delete_items = document.querySelectorAll(".delete-container"); //gathering all items in a variable
+            let delete_btn = document.querySelectorAll(".delete-btn"); //gathering all items in a variable
 
-            for (var i = 0; i < delete_items.length; i++) { //iterate through all items and adding the remove action to the delete buttons
-                delete_items[i].onclick = function() {
-                    this.parentNode.remove();
-                }
+            for (var i = 0; i < delete_btn.length; i++) { //iterate through all items and adding the remove action to the delete buttons
+                delete_btn[i].addEventListener('click', (ev) => {
+                    ev.target.parentNode.remove()
+                    checkPlaceholder()
+                })
             }
 
-            let check_items = document.querySelectorAll(".check");
+            let check_items = document.querySelectorAll(".check-btn");
 
             for (var i = 0; i < check_items.length; i++) {
                 check_items[i].onclick = function () {
                     this.classList.toggle("completed");
-                    this.parentNode.parentNode.querySelector(".text").classList.toggle("completed-text");
+                    this.parentNode.querySelector(".text").classList.toggle("completed-text");
                 }
             }
 
-            document.querySelector("#input-task input").value = "";
+            document.querySelector("#input-container input").value = "";
+            checkPlaceholder()
     }
 
+}
+
+checkPlaceholder()
+
+function checkPlaceholder () {
+    const listContainer = document.querySelector('#list')
+
+    // Verifying if the div id empty
+    if (listContainer.innerHTML.trim() === '') {
+        listContainer.classList.add('empty')
+    } else {
+        listContainer.classList.remove('empty')
+    }
 }
