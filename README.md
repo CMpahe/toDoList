@@ -8,12 +8,13 @@ Esta es una aplicación de lista de tareas simple pero atractiva, desarrollada c
 
 - **Agregar tareas**: Puedes escribir una tarea en el campo de texto y agregarla a la lista haciendo clic en el botón correspondiente.
 - **Marcar tareas como completadas**: Cada tarea tiene un ícono de círculo que, al hacer clic, marca la tarea como completada. Este estado es reversible, por lo que puedes desmarcarla si lo deseas.
-- **Eliminar tareas**: Cada tarea tiene un ícono de papelera que permite eliminarla de la lista.
+- **Eliminar tareas**: Cada tarea tiene un ícono en forma de **X** que permite eliminarla de la lista.
 - **Interfaz atractiva**: La aplicación cuenta con un diseño visual simple pero agradable utilizando CSS.
 
 ## Capturas de Pantalla
 
 <img src='./img/toDoList.png' alt='Captura de pantalla de la App To-Do List' width='400'>
+<img src='./img/toDoList-2.png' alt='Captura de pantalla de la App To-Do List' width='400'>
 
 ## Instalación
 
